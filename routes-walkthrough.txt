@@ -1,0 +1,44 @@
+login
+{
+    "username": "harshblip",
+    "password": "phoenix"
+}
+
+add a new book to the bookstore [ POST ]
+{
+    "quantity": 20,
+    "price": 40.00,
+    "isbn": "978-3-16-148410-0",
+    "author": "Harsh",
+    "title": "Book2",
+    "id": 11
+}
+
+get a book by requesting id [ GET ]
+https://127.0.0.1:5000/request/{id}
+
+delete a book by id [ DELETE ]
+https://127.0.0.1:5000/request/{id}
+
+list all the books in the library [ GET ]
+https://127.0.0.1:5000/request
+
+update a book by its id [ PUT ]
+https://127.0.0.1:5000/request
+body-{
+        "quantity": 20,
+        "price": 40.00,
+        "isbn": "978-3-16-148410-0",
+        "author": "Harsh",
+        "title": "Book2",
+        "id": 11
+    }
+current -                                   updated - 
+{                                          {         
+    "quantity": 20,                         "quantity": 20,
+    "price": 40.00,                         "price": 40.00,
+    "isbn": "978-3-16-148410-0",            "isbn": "978-3-16-148410-0",
+    "author": "Harsh",                      "author": "Harsh",
+    "title": "Book2",                       "title": "Book2",
+    "id": 11                                "id": 11
+}                                           }
